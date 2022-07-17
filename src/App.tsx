@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import { DefaultCurrensy, Footer, selectCurrensyObj, useAppSelector, CurrensyInterface } from './';
+import { DefaultCurrensy, Footer, selectCurrensyObj, useAppSelector, CurrensyInterface, Header } from './';
 
 
 
@@ -12,7 +12,7 @@ function App() {
       {!currensyObj.defaultCurrensy.trim() ? <DefaultCurrensy /> : null}
 
       <ExternalWrapper>
-
+        <Header />
         <Footer />
       </ExternalWrapper>
     </>
